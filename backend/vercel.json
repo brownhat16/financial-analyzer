@@ -1,8 +1,9 @@
 {
-  "builds": [
-    { "src": "main.py", "use": "@vercel/python" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "main.py" }
-  ]
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm run build"
 }
