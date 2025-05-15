@@ -1,9 +1,11 @@
 {
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
+  "builds": [
+    {
+      "src": "streamlit_app.py",
+      "use": "@vercel/python"
     }
-  },
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm run build"
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "streamlit_app.py" }
+  ]
 }
