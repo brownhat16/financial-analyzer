@@ -6,5 +6,5 @@ services:
     startCommand: uvicorn Backend.app2:app --host 0.0.0.0 --port 8000
     envVars:
       - key: TOGETHER_API_KEY
-        value: 11feafc5e220712d59ef5820ddca11b0571a3659353026a763efaf9f51431233
+        value: 75a0e63016bec427f1c7b3c44aa87d3d9763621be4f24025066ecc4500c137cc
     plan: free
