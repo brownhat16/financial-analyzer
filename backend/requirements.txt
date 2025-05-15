@@ -1,3 +1,9 @@
+
+fastapi
+uvicorn
+python-multipart
+requests
+
 # FastAPI and web server dependencies
 fastapi>=0.104.0
 uvicorn>=0.23.2
